@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #f4f4f0;
+  --foreground: #1d1d1f;
+  --accent-cyan: #00CED1;
+  --accent-teal: #20B2AA;
+  --accent-green: #3CB371;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  
+  .gradient-water {
+    background: linear-gradient(135deg, #3CB371 0%, #20B2AA 50%, #00CED1 100%);
+  }
+  
+  .gradient-water-soft {
+    background: linear-gradient(135deg, rgba(60, 179, 113, 0.1) 0%, rgba(32, 178, 170, 0.1) 50%, rgba(0, 206, 209, 0.1) 100%);
+  }
+}
+
+/* Custom scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #3CB371, #20B2AA, #00CED1);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(135deg, #2E8B57, #188E89, #00B8BA);
+}
+

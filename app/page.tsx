@@ -649,7 +649,7 @@ export default function Home() {
               </a>
             </div>
             <p className="text-xs text-gray-500">
-              © 2026 河好如初 ReRiver. All rights reserved.
+              © 2026 河好如初 ReRiver
             </p>
           </div>
         </div>
